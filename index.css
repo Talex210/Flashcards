@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+body {
+    background: center / cover no-repeat url(https://www.komar.de/en/media/catalog/product/cache/5/image/9df78eab33525d08d6e5fb8d27136e95/I/A/IAX10-0027.jpg);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Akronim', cursive;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 20px ridge #FAEBD7;
+    border-radius: 20px;
+    margin: 10px;
+    background: #DEB887;
+    color: #DC143C;
+    font-size: 22px;
+    font-family: 'Akronim', cursive;
+    font-weight: bold;
+    transform-style: preserve-3d;
+    transition: 1s linear;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
